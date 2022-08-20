@@ -1,0 +1,1877 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Dukamarket</title>
+    <link rel="shortcut icon" href="img/fav.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
+    />  
+    <link href="http://fonts.cdnfonts.com/css/cerebri-sans" rel="stylesheet" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body>
+    <!-- start header -->
+	<!-- //////////////background layer///////////// -->
+    <div class="layer"></div>
+    <!-- ////////////////side bar header/////////////////////////////// -->
+    <div class="sideBarHeader">
+      <div class="closeBtnBg">
+        <button class="closeBtn">
+          CLOSE <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+	  <div class="sideHeaderBody">
+		<a href="#" class="headerNav">home</a>
+		<a href="#" class="headerNav newTag">shop</a>
+		<div class="accordion" id="accordionExample">
+			<div class="accordion-item">
+			  
+				<a class="headerNav accordion-button accordion-header" id="headingOne" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+				  PAGE
+				</a>
+			  
+			  <div id="collapseOne" class="accordion-collapse collapsing" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+				<div class="accordion-body">
+					<ul class="extendedPages" style="padding:0 ; margin-bottom: 0;">
+						<li><a href="#">My Account</a></li>
+						<li><a href="#">FAQs</a></li>
+						<li><a href="#">Site Boxed</a></li>
+						<li><a href="#">404</a></li>
+					</ul>
+					
+				</div>
+			  </div>
+			</div>
+		</div>
+		<a href="#" class="headerNav">blog</a>
+		<a href="#" id="navWishlist" class="headerNav">wishlist <span class="counter">0</span></a>
+		<a href="#" class="headerNav">compare <span class="compareCount">0</span></a>
+		<a href="#" class="headerNav">login / register</a>
+	  </div>
+    </div>
+	<!-- ////////////////wishlist/////////////////////////////// -->
+    <div class="wishList" id="wishList">
+      <div class="cart_header">
+        <h3 class="title">Wishlist</h3>
+        <i class="close fa-solid fa-xmark"></i>
+      </div>
+      <div class="wishlist_empty">
+        <div class="icon">
+          <svg
+            width="119" height="119" viewBox="0 0 119 119" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M26.0346 89.8707C13.6486 78.2693 3 61.7359 3 40.4386C3 23.1205 16.9553 9.10938 34.1613 9.10938C44.3615 9.10938 53.3849 14.0413 59.0455 21.6635C64.706 14.0413 73.7854 9.10938 83.9297 9.10938C90.3749 9.10938 96.3717 11.0707 101.36 14.4895"
+              stroke="#D7DBE0"
+              stroke-width="6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+            <path
+              d="M113.633 31.0229C114.586 33.9934 115.091 37.188 115.091 40.4946C115.091 79.7265 78.7732 102.873 62.52 108.478C60.6144 109.15 57.4759 109.15 55.5704 108.478C51.9274 107.245 47.3318 105.115 42.3438 102.145"
+              stroke="#D7DBE0"
+              stroke-width="6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+            <path
+              d="M115.091 3L3 115.091"
+              stroke="#D7DBE0"
+              stroke-width="6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+          </svg>
+        </div>
+        <p>Wishlist is empty.</p>
+      </div>
+    </div>
+	<!-- ////////////////cart menu/////////////////////////////// -->
+	<div class="shopping-cart wishList" id="shoppingCart">
+		<div class="cart_header">
+			<h3 class="title">Shopping Cart</h3>
+			<i class="close fa-solid fa-xmark"></i>
+		</div>
+		<div class="cartBody">
+			<i class="icon-cart-empty"></i>
+			<p>Your cart is empty.</p>
+			<a href="#" class="returnToShop">return to Shop</a>
+		</div>
+		<div class="new" id="cartlist"></div>
+		<div class="cartFooter">
+			<div class="price">
+				<p>Total</p>
+				<span class="bill"><b>$<span>0.00</span></b></span>
+			</div>
+			<div class="cartButtons">
+				<a href="#" class="viewCart">view cart</a>
+				<a href="#" class="checkOut">check out</a>	
+			</div>
+		<div class="spend">
+			<p>Spend $<span class="spendMoney">500</span> to Free Shipping</p>
+		</div>	
+
+		</div>
+	</div>
+	<!-- ////////////////mean header/////////////////////////////// -->
+    <header class="pt-3">
+      <nav class="navbar navbar-expand-xl navbar-light p-lg-0 p-md-0 p-sm-0">
+        <div
+          class="container-fluid justify-content-md-between justify-content-sm-around"
+        >
+          <div
+            class="logo d-flex align-items-lg-center align-items-md-center pl-lg-4 pl-md-3 pl-sm-4"
+          >
+            <a href="#" class="responsive-header"
+              ><i class="fa-solid fa-bars"></i
+            ></a>
+            <a class="navbar-brand pl-xl-0 pl-lg-3 pl-md-3 pl-sm-3" href="#">
+              <img src="img/logo.png" alt="logo" />
+            </a>
+          </div>
+          <div class="collapse justify-content-xl-end navbar-collapse">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 m-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">SHOP</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">BLOG</a>
+              </li>
+              <li class="nav-item anim">
+                <a class="nav-link" href="#"
+                  >PAGE<i class="fa-solid fa-angle-down"></i
+                ></a>
+                <ul class="dropdown">
+                  <li><a href="#"> My Account</a></li>
+                  <li><a href="#">FAQs</a></li>
+				  <li><a href="#">Site Boxed</a></li>
+				  <li><a href="#">404</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index_about.html">ABOUT US</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact_index.html">CONTACT</a>
+              </li>
+            </ul>
+          </div>
+          <form class="d-flex align-items-center mt-sm-3">
+            <div class="eff">
+              <input
+                class="form-control cssP effect"
+                type="search"
+                placeholder="Search for products..."
+              />
+              <span class="focus-border"></span>
+            </div>
+            <button><i class="bi bi-search"></i></button>
+            <div id="headerIcons" style="position: relative">
+              <i
+                class="bi bi-person"
+                title="Login/Register"
+                style="font-size: 25px"
+              ></i>
+              <i class="wishlistItem bi bi-heart" title="Whishlist"></i>
+              <span class="indication heart">0</span>
+              <i class="bi bi-bag" title="Your cart"></i>
+              <span class="indication cart">0</span>
+            </div>
+          </form>
+        </div>
+      </nav>
+    </header>
+    <!-- end header -->
+	<!-- start home page section -->
+	<section class="homePage mt-3">
+		<div class="owl-carousel owl-theme " id="owl-old">
+			<div class="item backgroundOne">
+				<div class="backgroundOneText">
+					<div class="label">hot sale</div>
+					<div class="clr"></div>
+					<div class="customise">
+						<span class="txt1 " >limited</span>
+						<div class="clr"></div>
+						<span class="txt2">customise</span>
+						<p>discount 30% on products</p>
+						<div class="right"><a href="#">discover now</a></div>
+						<div class="clr"></div>
+					</div>
+				</div>
+
+			</div>
+			<div class="item backgroundTwo">
+				<div class="backgroundTwoText">
+					<div class="label">hot sale</div>
+					<div class="clr"></div>
+					<div class="customise">
+						<span class="txt1 " >limited</span>
+						<div class="clr"></div>
+						<span class="txt2 ml-4 anim1">deals </span>
+					    <span class="txt2 anim2">week</span>
+						<p>discount 20% on products</p>
+						<div class="right"><a href="#">discover now</a></div>
+						<div class="clr"></div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</section>
+	<!-- end home page section -->
+	<!-- start new div for pics -->
+	<div class="container pb-4">
+		<section class="inContainer">
+		<div class="row justify-content-sm-center">
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 mb-sm-4 ">
+				<div class="itemImg">
+					<img src="img/sl3.png" alt="ph1">
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+				<div class="itemImg">
+					<img src="img/sl2.png" alt="ph1">
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+				<div class="itemImg">
+					<img src="img/sl1.png" alt="ph1">
+				</div>
+			</div>
+		</div>
+		</section>
+	</div>
+	<!-- endnew div for pics-->
+	<!-- start product section -->
+	<section class="products">
+		<div class="container">
+			<div class="row justify-content-lg-center justify-content-xl-center">
+				<div class="col-xl-6">
+					<div class="title text-center ">
+						<p><b>Top Featured</b> Products 2022</p>
+					</div>
+				</div>
+			</div>
+			<div class="row justify-content-center mt-3">
+				<div class="col-xl-4">
+					<div class="tapHeader">
+						<nav>
+							<ul class="d-flex justify-content-center">
+								<li id="tab1" class="inactive">Sneaker</li>
+								<li id="tab2">Women's</li>
+								<li id="tab3">Men</li>
+								<li id="tab4">Kids</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+			<div class="row pb-5 borderTop BT">
+				<div class="col-xl-12">
+					       
+					<div class="insideTabs" id="tab1-content">
+						    <div  id="loadtab1">
+							<div class="sk-circle">
+							<div class="sk-circle1 sk-child"></div>
+							<div class="sk-circle2 sk-child"></div>
+							<div class="sk-circle3 sk-child"></div>
+							<div class="sk-circle4 sk-child"></div>
+							<div class="sk-circle5 sk-child"></div>
+							<div class="sk-circle6 sk-child"></div>
+							<div class="sk-circle7 sk-child"></div>
+							<div class="sk-circle8 sk-child"></div>
+							<div class="sk-circle9 sk-child"></div>
+							<div class="sk-circle10 sk-child"></div>
+							<div class="sk-circle11 sk-child"></div>
+							<div class="sk-circle12 sk-child"></div>
+						  </div>
+						</div>
+						
+					<div class="owl-new owl-carousel owl-theme ">
+							<div class="item list1">
+								<div class="card" style="width: 18rem; border:0;">
+									<img src="img/s2.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+									  <h5><b>Puma Pacer Cage Sneakers</b></h5>
+									  <p>&star; &star; &star; &star; &star;</p>
+									  <span class="afterDis"><b>$50</b></span>
+									  <span class="beforeDis"><strike>$100</strike></span>
+									  <a href="#" class="d-block">Add To Cart</a>
+									</div>
+									<div class="icons">
+										<a href="#"><i class="bi bi-eye"></i></a>
+										<a href="#"><i class="bi bi-stack"></i></a>
+										<a href="#"><i class="bi bi-heart"></i></a>
+									  </div>
+								  </div>
+						    </div>
+							<div class="item list1">
+								<div class="card" style="width: 18rem; border:0;">
+									<img src="img/s1.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+									  <h5><b>Puma Pacer Cage Sneakers</b></h5>
+									  <p>&star; &star; &star; &star; &star;</p>
+									  <span class="afterDis"><b>$50</b></span>
+									  <span class="beforeDis"><strike>$100</strike></span>
+									  <a href="#" class="d-block">Add To Cart</a>
+									</div>
+									<div class="icons">
+										<a href="#"><i class="bi bi-eye"></i></a>
+										<a href="#"><i class="bi bi-stack"></i></a>
+										<a href="#"><i class="bi bi-heart"></i></a>
+									  </div>
+								  </div>
+						    </div>
+							<div class="item list1">
+								<div class="card" style="width: 18rem; border:0;">
+									<img src="img/s3.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+									  <h5><b>Puma Pacer Cage Sneakers</b></h5>
+									  <p>&star; &star; &star; &star; &star;</p>
+									  <span class="afterDis"><b>$50</b></span>
+									  <span class="beforeDis"><strike>$100</strike></span>
+									  <a href="#" class="d-block">Add To Cart</a>
+									</div>
+									<div class="icons">
+										<a href="#"><i class="bi bi-eye"></i></a>
+										<a href="#"><i class="bi bi-stack"></i></a>
+										<a href="#"><i class="bi bi-heart"></i></a>
+									  </div>
+								  </div>
+						    </div>
+							<div class="item list1">
+								<div class="card" style="width: 18rem; border:0;">
+									<img src="img/s4.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+									  <h5><b>Puma Pacer Cage Sneakers</b></h5>
+									  <p>&star; &star; &star; &star; &star;</p>
+									  <span class="afterDis"><b>$50</b></span>
+									  <span class="beforeDis"><strike>$100</strike></span>
+									  <a href="#" class="d-block">Add To Cart</a>
+									</div>
+									<div class="icons">
+										<a href="#"><i class="bi bi-eye"></i></a>
+										<a href="#"><i class="bi bi-stack"></i></a>
+										<a href="#"><i class="bi bi-heart"></i></a>
+									  </div>
+								  </div>
+						    </div>
+							<div class="item list1">
+								<div class="card" style="width: 18rem; border:0;">
+									<img src="img/s5.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+									  <h5><b>Puma Pacer Cage Sneakers</b></h5>
+									  <p>&star; &star; &star; &star; &star;</p>
+									  <span class="afterDis"><b>$50</b></span>
+									  <span class="beforeDis"><strike>$100</strike></span>
+									  <a href="#" class="d-block">Add To Cart</a>
+									</div>
+									<div class="icons">
+										<a href="#"><i class="bi bi-eye"></i></a>
+										<a href="#"><i class="bi bi-stack"></i></a>
+										<a href="#"><i class="bi bi-heart"></i></a>
+									  </div>
+								  </div>
+						    </div>
+							<div class="item list1">
+								<div class="card" style="width: 18rem; border:0;">
+									<img src="img/s6.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+									  <h5><b>Puma Pacer Cage Sneakers</b></h5>
+									  <p>&star; &star; &star; &star; &star;</p>
+									  <span class="afterDis"><b>$50</b></span>
+									  <span class="beforeDis"><strike>$100</strike></span>
+									  <a href="#" class="d-block">Add To Cart</a>
+									</div>
+									<div class="icons">
+										<a href="#"><i class="bi bi-eye"></i></a>
+										<a href="#"><i class="bi bi-stack"></i></a>
+										<a href="#"><i class="bi bi-heart"></i></a>
+									  </div>
+								  </div>
+						    </div>
+							<div class="item list1">
+								<div class="card" style="width: 18rem; border:0;">
+									<img src="img/s7.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+									  <h5><b>Puma Pacer Cage Sneakers</b></h5>
+									  <p>&star; &star; &star; &star; &star;</p>
+									  <span class="afterDis"><b>$50</b></span>
+									  <span class="beforeDis"><strike>$100</strike></span>
+									  <a href="#" class="d-block">Add To Cart</a>
+									</div>
+									<div class="icons">
+										<a href="#"><i class="bi bi-eye"></i></a>
+										<a href="#"><i class="bi bi-stack"></i></a>
+										<a href="#"><i class="bi bi-heart"></i></a>
+									  </div>
+								  </div>
+						    </div>
+							<div class="item list1">
+								<div class="card" style="width: 18rem; border:0;">
+									<img src="img/s8.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+									  <h5><b>Puma Pacer Cage Sneakers</b></h5>
+									  <p>&star; &star; &star; &star; &star;</p>
+									  <span class="afterDis"><b>$50</b></span>
+									  <span class="beforeDis"><strike>$100</strike></span>
+									  <a href="#" class="d-block">Add To Cart</a>
+									</div>
+									<div class="icons">
+										<a href="#"><i class="bi bi-eye"></i></a>
+										<a href="#"><i class="bi bi-stack"></i></a>
+										<a href="#"><i class="bi bi-heart"></i></a>
+									  </div>
+								  </div>
+						    </div>
+							<div class="item list1">
+								<div class="card" style="width: 18rem; border:0;">
+									<img src="img/s9.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+									  <h5><b>Puma Pacer Cage Sneakers</b></h5>
+									  <p>&star; &star; &star; &star; &star;</p>
+									  <span class="afterDis"><b>$50</b></span>
+									  <span class="beforeDis"><strike>$100</strike></span>
+									  <a href="#" class="d-block">Add To Cart</a>
+									</div>
+									<div class="icons">
+										<a href="#"><i class="bi bi-eye"></i></a>
+										<a href="#"><i class="bi bi-stack"></i></a>
+										<a href="#"><i class="bi bi-heart"></i></a>
+									  </div>
+								  </div>
+						    </div>
+							<div class="item list1">
+								<div class="card" style="width: 18rem; border:0;">
+									<img src="img/s10.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+									  <h5><b>Puma Pacer Cage Sneakers</b></h5>
+									  <p>&star; &star; &star; &star; &star;</p>
+									  <span class="afterDis"><b>$50</b></span>
+									  <span class="beforeDis"><strike>$100</strike></span>
+									  <a href="#" class="d-block">Add To Cart</a>
+									</div>
+									<div class="icons">
+										<a href="#"><i class="bi bi-eye"></i></a>
+										<a href="#"><i class="bi bi-stack"></i></a>
+										<a href="#"><i class="bi bi-heart"></i></a>
+									  </div>
+								  </div>
+						    </div>
+							<div class="item list1">
+								<div class="card" style="width: 18rem; border:0;">
+									<img src="img/s11.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+									  <h5><b>Puma Pacer Cage Sneakers</b></h5>
+									  <p>&star; &star; &star; &star; &star;</p>
+									  <span class="afterDis"><b>$50</b></span>
+									  <span class="beforeDis"><strike>$100</strike></span>
+									  <a href="#" class="d-block">Add To Cart</a>
+									</div>
+									<div class="icons">
+										<a href="#"><i class="bi bi-eye"></i></a>
+										<a href="#"><i class="bi bi-stack"></i></a>
+										<a href="#"><i class="bi bi-heart"></i></a>
+									  </div>
+								  </div>
+						    </div>
+							<div class="item list1">
+								<div class="card" style="width: 18rem; border:0;">
+									<img src="img/s12.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+									  <h5><b>Puma Pacer Cage Sneakers</b></h5>
+									  <p>&star; &star; &star; &star; &star;</p>
+									  <span class="afterDis"><b>$50</b></span>
+									  <span class="beforeDis"><strike>$100</strike></span>
+									  <a href="#" class="d-block">Add To Cart</a>
+									</div>
+									<div class="icons">
+										<a href="#"><i class="bi bi-eye"></i></a>
+										<a href="#"><i class="bi bi-stack"></i></a>
+										<a href="#"><i class="bi bi-heart"></i></a>
+									  </div>
+								  </div>
+						    </div>
+					</div>
+				    </div>
+					<div class="insideTabs" id="tab2-content">
+						<div  id="loadtab2">
+							<div class="sk-circle">
+							<div class="sk-circle1 sk-child"></div>
+							<div class="sk-circle2 sk-child"></div>
+							<div class="sk-circle3 sk-child"></div>
+							<div class="sk-circle4 sk-child"></div>
+							<div class="sk-circle5 sk-child"></div>
+							<div class="sk-circle6 sk-child"></div>
+							<div class="sk-circle7 sk-child"></div>
+							<div class="sk-circle8 sk-child"></div>
+							<div class="sk-circle9 sk-child"></div>
+							<div class="sk-circle10 sk-child"></div>
+							<div class="sk-circle11 sk-child"></div>
+							<div class="sk-circle12 sk-child"></div>
+						  </div>
+						</div>
+						<div class="owl-new owl-carousel owl-theme ">
+							<div class="item list1">
+								<div class="card" style="width: 18rem; border:0;">
+									<img src="img/s2.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+									  <h5><b>Puma Pacer Cage Sneakers</b></h5>
+									  <p>&star; &star; &star; &star; &star;</p>
+									  <span class="afterDis"><b>$50</b></span>
+									  <span class="beforeDis"><strike>$100</strike></span>
+									  <a href="#" class="d-block">Add To Cart</a>
+									</div>
+									<div class="icons">
+										<a href="#"><i class="bi bi-eye"></i></a>
+										<a href="#"><i class="bi bi-stack"></i></a>
+										<a href="#"><i class="bi bi-heart"></i></a>
+									  </div>
+								  </div>
+						    </div>
+							<div class="item list1">
+								<div class="card" style="width: 18rem; border:0;">
+									<img src="img/s1.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+									  <h5><b>Puma Pacer Cage Sneakers</b></h5>
+									  <p>&star; &star; &star; &star; &star;</p>
+									  <span class="afterDis"><b>$50</b></span>
+									  <span class="beforeDis"><strike>$100</strike></span>
+									  <a href="#" class="d-block">Add To Cart</a>
+									</div>
+									<div class="icons">
+										<a href="#"><i class="bi bi-eye"></i></a>
+										<a href="#"><i class="bi bi-stack"></i></a>
+										<a href="#"><i class="bi bi-heart"></i></a>
+									  </div>
+								  </div>
+						    </div>
+							<div class="item list1">
+								<div class="card" style="width: 18rem; border:0;">
+									<img src="img/s3.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+									  <h5><b>Puma Pacer Cage Sneakers</b></h5>
+									  <p>&star; &star; &star; &star; &star;</p>
+									  <span class="afterDis"><b>$50</b></span>
+									  <span class="beforeDis"><strike>$100</strike></span>
+									  <a href="#" class="d-block">Add To Cart</a>
+									</div>
+									<div class="icons">
+										<a href="#"><i class="bi bi-eye"></i></a>
+										<a href="#"><i class="bi bi-stack"></i></a>
+										<a href="#"><i class="bi bi-heart"></i></a>
+									  </div>
+								  </div>
+						    </div>
+							<div class="item list1">
+								<div class="card" style="width: 18rem; border:0;">
+									<img src="img/s4.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+									  <h5><b>Puma Pacer Cage Sneakers</b></h5>
+									  <p>&star; &star; &star; &star; &star;</p>
+									  <span class="afterDis"><b>$50</b></span>
+									  <span class="beforeDis"><strike>$100</strike></span>
+									  <a href="#" class="d-block">Add To Cart</a>
+									</div>
+									<div class="icons">
+										<a href="#"><i class="bi bi-eye"></i></a>
+										<a href="#"><i class="bi bi-stack"></i></a>
+										<a href="#"><i class="bi bi-heart"></i></a>
+									  </div>
+								  </div>
+						    </div>
+							<div class="item list1">
+								<div class="card" style="width: 18rem; border:0;">
+									<img src="img/s5.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+									  <h5><b>Puma Pacer Cage Sneakers</b></h5>
+									  <p>&star; &star; &star; &star; &star;</p>
+									  <span class="afterDis"><b>$50</b></span>
+									  <span class="beforeDis"><strike>$100</strike></span>
+									  <a href="#" class="d-block">Add To Cart</a>
+									</div>
+									<div class="icons">
+										<a href="#"><i class="bi bi-eye"></i></a>
+										<a href="#"><i class="bi bi-stack"></i></a>
+										<a href="#"><i class="bi bi-heart"></i></a>
+									  </div>
+								  </div>
+						    </div>
+							<div class="item list1">
+								<div class="card" style="width: 18rem; border:0;">
+									<img src="img/s6.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+									  <h5><b>Puma Pacer Cage Sneakers</b></h5>
+									  <p>&star; &star; &star; &star; &star;</p>
+									  <span class="afterDis"><b>$50</b></span>
+									  <span class="beforeDis"><strike>$100</strike></span>
+									  <a href="#" class="d-block">Add To Cart</a>
+									</div>
+									<div class="icons">
+										<a href="#"><i class="bi bi-eye"></i></a>
+										<a href="#"><i class="bi bi-stack"></i></a>
+										<a href="#"><i class="bi bi-heart"></i></a>
+									  </div>
+								  </div>
+						    </div>
+							<div class="item list1">
+								<div class="card" style="width: 18rem; border:0;">
+									<img src="img/s7.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+									  <h5><b>Puma Pacer Cage Sneakers</b></h5>
+									  <p>&star; &star; &star; &star; &star;</p>
+									  <span class="afterDis"><b>$50</b></span>
+									  <span class="beforeDis"><strike>$100</strike></span>
+									  <a href="#" class="d-block">Add To Cart</a>
+									</div>
+									<div class="icons">
+										<a href="#"><i class="bi bi-eye"></i></a>
+										<a href="#"><i class="bi bi-stack"></i></a>
+										<a href="#"><i class="bi bi-heart"></i></a>
+									  </div>
+								  </div>
+						    </div>
+							<div class="item list1">
+								<div class="card" style="width: 18rem; border:0;">
+									<img src="img/s8.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+									  <h5><b>Puma Pacer Cage Sneakers</b></h5>
+									  <p>&star; &star; &star; &star; &star;</p>
+									  <span class="afterDis"><b>$50</b></span>
+									  <span class="beforeDis"><strike>$100</strike></span>
+									  <a href="#" class="d-block">Add To Cart</a>
+									</div>
+									<div class="icons">
+										<a href="#"><i class="bi bi-eye"></i></a>
+										<a href="#"><i class="bi bi-stack"></i></a>
+										<a href="#"><i class="bi bi-heart"></i></a>
+									  </div>
+								  </div>
+						    </div>
+							<div class="item list1">
+								<div class="card" style="width: 18rem; border:0;">
+									<img src="img/s9.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+									  <h5><b>Puma Pacer Cage Sneakers</b></h5>
+									  <p>&star; &star; &star; &star; &star;</p>
+									  <span class="afterDis"><b>$50</b></span>
+									  <span class="beforeDis"><strike>$100</strike></span>
+									  <a href="#" class="d-block">Add To Cart</a>
+									</div>
+									<div class="icons">
+										<a href="#"><i class="bi bi-eye"></i></a>
+										<a href="#"><i class="bi bi-stack"></i></a>
+										<a href="#"><i class="bi bi-heart"></i></a>
+									  </div>
+								  </div>
+						    </div>
+							<div class="item list1">
+								<div class="card" style="width: 18rem; border:0;">
+									<img src="img/s10.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+									  <h5><b>Puma Pacer Cage Sneakers</b></h5>
+									  <p>&star; &star; &star; &star; &star;</p>
+									  <span class="afterDis"><b>$50</b></span>
+									  <span class="beforeDis"><strike>$100</strike></span>
+									  <a href="#" class="d-block">Add To Cart</a>
+									</div>
+									<div class="icons">
+										<a href="#"><i class="bi bi-eye"></i></a>
+										<a href="#"><i class="bi bi-stack"></i></a>
+										<a href="#"><i class="bi bi-heart"></i></a>
+									  </div>
+								  </div>
+						    </div>
+							<div class="item list1">
+								<div class="card" style="width: 18rem; border:0;">
+									<img src="img/s11.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+									  <h5><b>Puma Pacer Cage Sneakers</b></h5>
+									  <p>&star; &star; &star; &star; &star;</p>
+									  <span class="afterDis"><b>$50</b></span>
+									  <span class="beforeDis"><strike>$100</strike></span>
+									  <a href="#" class="d-block">Add To Cart</a>
+									</div>
+									<div class="icons">
+										<a href="#"><i class="bi bi-eye"></i></a>
+										<a href="#"><i class="bi bi-stack"></i></a>
+										<a href="#"><i class="bi bi-heart"></i></a>
+									  </div>
+								  </div>
+						    </div>
+							<div class="item list1">
+								<div class="card" style="width: 18rem; border:0;">
+									<img src="img/s12.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+									  <h5><b>Puma Pacer Cage Sneakers</b></h5>
+									  <p>&star; &star; &star; &star; &star;</p>
+									  <span class="afterDis"><b>$50</b></span>
+									  <span class="beforeDis"><strike>$100</strike></span>
+									  <a href="#" class="d-block">Add To Cart</a>
+									</div>
+									<div class="icons">
+										<a href="#"><i class="bi bi-eye"></i></a>
+										<a href="#"><i class="bi bi-stack"></i></a>
+										<a href="#"><i class="bi bi-heart"></i></a>
+									  </div>
+								  </div>
+						    </div>
+					</div>
+				    </div>
+					<div class="insideTabs" id="tab3-content">
+						<div  id="loadtab3">
+							<div class="sk-circle">
+							<div class="sk-circle1 sk-child"></div>
+							<div class="sk-circle2 sk-child"></div>
+							<div class="sk-circle3 sk-child"></div>
+							<div class="sk-circle4 sk-child"></div>
+							<div class="sk-circle5 sk-child"></div>
+							<div class="sk-circle6 sk-child"></div>
+							<div class="sk-circle7 sk-child"></div>
+							<div class="sk-circle8 sk-child"></div>
+							<div class="sk-circle9 sk-child"></div>
+							<div class="sk-circle10 sk-child"></div>
+							<div class="sk-circle11 sk-child"></div>
+							<div class="sk-circle12 sk-child"></div>
+						  </div>
+						</div>
+						<div class="owl-new owl-carousel owl-theme ">
+							<div class="item list1">
+								<div class="card" style="width: 18rem; border:0;">
+									<img src="img/s2.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+									  <h5><b>Puma Pacer Cage Sneakers</b></h5>
+									  <p>&star; &star; &star; &star; &star;</p>
+									  <span class="afterDis"><b>$50</b></span>
+									  <span class="beforeDis"><strike>$100</strike></span>
+									  <a href="#" class="d-block">Add To Cart</a>
+									</div>
+									<div class="icons">
+										<a href="#"><i class="bi bi-eye"></i></a>
+										<a href="#"><i class="bi bi-stack"></i></a>
+										<a href="#"><i class="bi bi-heart"></i></a>
+									  </div>
+								  </div>
+						    </div>
+							<div class="item list1">
+								<div class="card" style="width: 18rem; border:0;">
+									<img src="img/s1.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+									  <h5><b>Puma Pacer Cage Sneakers</b></h5>
+									  <p>&star; &star; &star; &star; &star;</p>
+									  <span class="afterDis"><b>$50</b></span>
+									  <span class="beforeDis"><strike>$100</strike></span>
+									  <a href="#" class="d-block">Add To Cart</a>
+									</div>
+									<div class="icons">
+										<a href="#"><i class="bi bi-eye"></i></a>
+										<a href="#"><i class="bi bi-stack"></i></a>
+										<a href="#"><i class="bi bi-heart"></i></a>
+									  </div>
+								  </div>
+						    </div>
+							<div class="item list1">
+								<div class="card" style="width: 18rem; border:0;">
+									<img src="img/s3.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+									  <h5><b>Puma Pacer Cage Sneakers</b></h5>
+									  <p>&star; &star; &star; &star; &star;</p>
+									  <span class="afterDis"><b>$50</b></span>
+									  <span class="beforeDis"><strike>$100</strike></span>
+									  <a href="#" class="d-block">Add To Cart</a>
+									</div>
+									<div class="icons">
+										<a href="#"><i class="bi bi-eye"></i></a>
+										<a href="#"><i class="bi bi-stack"></i></a>
+										<a href="#"><i class="bi bi-heart"></i></a>
+									  </div>
+								  </div>
+						    </div>
+							<div class="item list1">
+								<div class="card" style="width: 18rem; border:0;">
+									<img src="img/s4.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+									  <h5><b>Puma Pacer Cage Sneakers</b></h5>
+									  <p>&star; &star; &star; &star; &star;</p>
+									  <span class="afterDis"><b>$50</b></span>
+									  <span class="beforeDis"><strike>$100</strike></span>
+									  <a href="#" class="d-block">Add To Cart</a>
+									</div>
+									<div class="icons">
+										<a href="#"><i class="bi bi-eye"></i></a>
+										<a href="#"><i class="bi bi-stack"></i></a>
+										<a href="#"><i class="bi bi-heart"></i></a>
+									  </div>
+								  </div>
+						    </div>
+							<div class="item list1">
+								<div class="card" style="width: 18rem; border:0;">
+									<img src="img/s5.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+									  <h5><b>Puma Pacer Cage Sneakers</b></h5>
+									  <p>&star; &star; &star; &star; &star;</p>
+									  <span class="afterDis"><b>$50</b></span>
+									  <span class="beforeDis"><strike>$100</strike></span>
+									  <a href="#" class="d-block">Add To Cart</a>
+									</div>
+									<div class="icons">
+										<a href="#"><i class="bi bi-eye"></i></a>
+										<a href="#"><i class="bi bi-stack"></i></a>
+										<a href="#"><i class="bi bi-heart"></i></a>
+									  </div>
+								  </div>
+						    </div>
+							<div class="item list1">
+								<div class="card" style="width: 18rem; border:0;">
+									<img src="img/s6.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+									  <h5><b>Puma Pacer Cage Sneakers</b></h5>
+									  <p>&star; &star; &star; &star; &star;</p>
+									  <span class="afterDis"><b>$50</b></span>
+									  <span class="beforeDis"><strike>$100</strike></span>
+									  <a href="#" class="d-block">Add To Cart</a>
+									</div>
+									<div class="icons">
+										<a href="#"><i class="bi bi-eye"></i></a>
+										<a href="#"><i class="bi bi-stack"></i></a>
+										<a href="#"><i class="bi bi-heart"></i></a>
+									  </div>
+								  </div>
+						    </div>
+							<div class="item list1">
+								<div class="card" style="width: 18rem; border:0;">
+									<img src="img/s7.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+									  <h5><b>Puma Pacer Cage Sneakers</b></h5>
+									  <p>&star; &star; &star; &star; &star;</p>
+									  <span class="afterDis"><b>$50</b></span>
+									  <span class="beforeDis"><strike>$100</strike></span>
+									  <a href="#" class="d-block">Add To Cart</a>
+									</div>
+									<div class="icons">
+										<a href="#"><i class="bi bi-eye"></i></a>
+										<a href="#"><i class="bi bi-stack"></i></a>
+										<a href="#"><i class="bi bi-heart"></i></a>
+									  </div>
+								  </div>
+						    </div>
+							<div class="item list1">
+								<div class="card" style="width: 18rem; border:0;">
+									<img src="img/s8.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+									  <h5><b>Puma Pacer Cage Sneakers</b></h5>
+									  <p>&star; &star; &star; &star; &star;</p>
+									  <span class="afterDis"><b>$50</b></span>
+									  <span class="beforeDis"><strike>$100</strike></span>
+									  <a href="#" class="d-block">Add To Cart</a>
+									</div>
+									<div class="icons">
+										<a href="#"><i class="bi bi-eye"></i></a>
+										<a href="#"><i class="bi bi-stack"></i></a>
+										<a href="#"><i class="bi bi-heart"></i></a>
+									  </div>
+								  </div>
+						    </div>
+							<div class="item list1">
+								<div class="card" style="width: 18rem; border:0;">
+									<img src="img/s9.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+									  <h5><b>Puma Pacer Cage Sneakers</b></h5>
+									  <p>&star; &star; &star; &star; &star;</p>
+									  <span class="afterDis"><b>$50</b></span>
+									  <span class="beforeDis"><strike>$100</strike></span>
+									  <a href="#" class="d-block">Add To Cart</a>
+									</div>
+									<div class="icons">
+										<a href="#"><i class="bi bi-eye"></i></a>
+										<a href="#"><i class="bi bi-stack"></i></a>
+										<a href="#"><i class="bi bi-heart"></i></a>
+									  </div>
+								  </div>
+						    </div>
+							<div class="item list1">
+								<div class="card" style="width: 18rem; border:0;">
+									<img src="img/s10.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+									  <h5><b>Puma Pacer Cage Sneakers</b></h5>
+									  <p>&star; &star; &star; &star; &star;</p>
+									  <span class="afterDis"><b>$50</b></span>
+									  <span class="beforeDis"><strike>$100</strike></span>
+									  <a href="#" class="d-block">Add To Cart</a>
+									</div>
+									<div class="icons">
+										<a href="#"><i class="bi bi-eye"></i></a>
+										<a href="#"><i class="bi bi-stack"></i></a>
+										<a href="#"><i class="bi bi-heart"></i></a>
+									  </div>
+								  </div>
+						    </div>
+							<div class="item list1">
+								<div class="card" style="width: 18rem; border:0;">
+									<img src="img/s11.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+									  <h5><b>Puma Pacer Cage Sneakers</b></h5>
+									  <p>&star; &star; &star; &star; &star;</p>
+									  <span class="afterDis"><b>$50</b></span>
+									  <span class="beforeDis"><strike>$100</strike></span>
+									  <a href="#" class="d-block">Add To Cart</a>
+									</div>
+									<div class="icons">
+										<a href="#"><i class="bi bi-eye"></i></a>
+										<a href="#"><i class="bi bi-stack"></i></a>
+										<a href="#"><i class="bi bi-heart"></i></a>
+									  </div>
+								  </div>
+						    </div>
+							<div class="item list1">
+								<div class="card" style="width: 18rem; border:0;">
+									<img src="img/s12.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+									  <h5><b>Puma Pacer Cage Sneakers</b></h5>
+									  <p>&star; &star; &star; &star; &star;</p>
+									  <span class="afterDis"><b>$50</b></span>
+									  <span class="beforeDis"><strike>$100</strike></span>
+									  <a href="#" class="d-block">Add To Cart</a>
+									</div>
+									<div class="icons">
+										<a href="#"><i class="bi bi-eye"></i></a>
+										<a href="#"><i class="bi bi-stack"></i></a>
+										<a href="#"><i class="bi bi-heart"></i></a>
+									  </div>
+								  </div>
+						    </div>
+					</div>
+				    </div>
+					<div class="insideTabs" id="tab4-content">
+						<div  id="loadtab4">
+							<div class="sk-circle">
+							<div class="sk-circle1 sk-child"></div>
+							<div class="sk-circle2 sk-child"></div>
+							<div class="sk-circle3 sk-child"></div>
+							<div class="sk-circle4 sk-child"></div>
+							<div class="sk-circle5 sk-child"></div>
+							<div class="sk-circle6 sk-child"></div>
+							<div class="sk-circle7 sk-child"></div>
+							<div class="sk-circle8 sk-child"></div>
+							<div class="sk-circle9 sk-child"></div>
+							<div class="sk-circle10 sk-child"></div>
+							<div class="sk-circle11 sk-child"></div>
+							<div class="sk-circle12 sk-child"></div>
+						  </div>
+						</div>
+						<div class="owl-new owl-carousel owl-theme ">
+							<div class="item list1">
+								<div class="card" style="width: 18rem; border:0;">
+									<img src="img/s2.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+									  <h5><b>Puma Pacer Cage Sneakers</b></h5>
+									  <p>&star; &star; &star; &star; &star;</p>
+									  <span class="afterDis"><b>$50</b></span>
+									  <span class="beforeDis"><strike>$100</strike></span>
+									  <a href="#" class="d-block">Add To Cart</a>
+									</div>
+									<div class="icons">
+										<a href="#"><i class="bi bi-eye"></i></a>
+										<a href="#"><i class="bi bi-stack"></i></a>
+										<a href="#"><i class="bi bi-heart"></i></a>
+									  </div>
+								  </div>
+						    </div>
+							<div class="item list1">
+								<div class="card" style="width: 18rem; border:0;">
+									<img src="img/s1.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+									  <h5><b>Puma Pacer Cage Sneakers</b></h5>
+									  <p>&star; &star; &star; &star; &star;</p>
+									  <span class="afterDis"><b>$50</b></span>
+									  <span class="beforeDis"><strike>$100</strike></span>
+									  <a href="#" class="d-block">Add To Cart</a>
+									</div>
+									<div class="icons">
+										<a href="#"><i class="bi bi-eye"></i></a>
+										<a href="#"><i class="bi bi-stack"></i></a>
+										<a href="#"><i class="bi bi-heart"></i></a>
+									  </div>
+								  </div>
+						    </div>
+							<div class="item list1">
+								<div class="card" style="width: 18rem; border:0;">
+									<img src="img/s3.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+									  <h5><b>Puma Pacer Cage Sneakers</b></h5>
+									  <p>&star; &star; &star; &star; &star;</p>
+									  <span class="afterDis"><b>$50</b></span>
+									  <span class="beforeDis"><strike>$100</strike></span>
+									  <a href="#" class="d-block">Add To Cart</a>
+									</div>
+									<div class="icons">
+										<a href="#"><i class="bi bi-eye"></i></a>
+										<a href="#"><i class="bi bi-stack"></i></a>
+										<a href="#"><i class="bi bi-heart"></i></a>
+									  </div>
+								  </div>
+						    </div>
+							<div class="item list1">
+								<div class="card" style="width: 18rem; border:0;">
+									<img src="img/s4.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+									  <h5><b>Puma Pacer Cage Sneakers</b></h5>
+									  <p>&star; &star; &star; &star; &star;</p>
+									  <span class="afterDis"><b>$50</b></span>
+									  <span class="beforeDis"><strike>$100</strike></span>
+									  <a href="#" class="d-block">Add To Cart</a>
+									</div>
+									<div class="icons">
+										<a href="#"><i class="bi bi-eye"></i></a>
+										<a href="#"><i class="bi bi-stack"></i></a>
+										<a href="#"><i class="bi bi-heart"></i></a>
+									  </div>
+								  </div>
+						    </div>
+							<div class="item list1">
+								<div class="card" style="width: 18rem; border:0;">
+									<img src="img/s5.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+									  <h5><b>Puma Pacer Cage Sneakers</b></h5>
+									  <p>&star; &star; &star; &star; &star;</p>
+									  <span class="afterDis"><b>$50</b></span>
+									  <span class="beforeDis"><strike>$100</strike></span>
+									  <a href="#" class="d-block">Add To Cart</a>
+									</div>
+									<div class="icons">
+										<a href="#"><i class="bi bi-eye"></i></a>
+										<a href="#"><i class="bi bi-stack"></i></a>
+										<a href="#"><i class="bi bi-heart"></i></a>
+									  </div>
+								  </div>
+						    </div>
+							<div class="item list1">
+								<div class="card" style="width: 18rem; border:0;">
+									<img src="img/s6.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+									  <h5><b>Puma Pacer Cage Sneakers</b></h5>
+									  <p>&star; &star; &star; &star; &star;</p>
+									  <span class="afterDis"><b>$50</b></span>
+									  <span class="beforeDis"><strike>$100</strike></span>
+									  <a href="#" class="d-block">Add To Cart</a>
+									</div>
+									<div class="icons">
+										<a href="#"><i class="bi bi-eye"></i></a>
+										<a href="#"><i class="bi bi-stack"></i></a>
+										<a href="#"><i class="bi bi-heart"></i></a>
+									  </div>
+								  </div>
+						    </div>
+							<div class="item list1">
+								<div class="card" style="width: 18rem; border:0;">
+									<img src="img/s7.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+									  <h5><b>Puma Pacer Cage Sneakers</b></h5>
+									  <p>&star; &star; &star; &star; &star;</p>
+									  <span class="afterDis"><b>$50</b></span>
+									  <span class="beforeDis"><strike>$100</strike></span>
+									  <a href="#" class="d-block">Add To Cart</a>
+									</div>
+									<div class="icons">
+										<a href="#"><i class="bi bi-eye"></i></a>
+										<a href="#"><i class="bi bi-stack"></i></a>
+										<a href="#"><i class="bi bi-heart"></i></a>
+									  </div>
+								  </div>
+						    </div>
+							<div class="item list1">
+								<div class="card" style="width: 18rem; border:0;">
+									<img src="img/s8.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+									  <h5><b>Puma Pacer Cage Sneakers</b></h5>
+									  <p>&star; &star; &star; &star; &star;</p>
+									  <span class="afterDis"><b>$50</b></span>
+									  <span class="beforeDis"><strike>$100</strike></span>
+									  <a href="#" class="d-block">Add To Cart</a>
+									</div>
+									<div class="icons">
+										<a href="#"><i class="bi bi-eye"></i></a>
+										<a href="#"><i class="bi bi-stack"></i></a>
+										<a href="#"><i class="bi bi-heart"></i></a>
+									  </div>
+								  </div>
+						    </div>
+							<div class="item list1">
+								<div class="card" style="width: 18rem; border:0;">
+									<img src="img/s9.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+									  <h5><b>Puma Pacer Cage Sneakers</b></h5>
+									  <p>&star; &star; &star; &star; &star;</p>
+									  <span class="afterDis"><b>$50</b></span>
+									  <span class="beforeDis"><strike>$100</strike></span>
+									  <a href="#" class="d-block">Add To Cart</a>
+									</div>
+									<div class="icons">
+										<a href="#"><i class="bi bi-eye"></i></a>
+										<a href="#"><i class="bi bi-stack"></i></a>
+										<a href="#"><i class="bi bi-heart"></i></a>
+									  </div>
+								  </div>
+						    </div>
+							<div class="item list1">
+								<div class="card" style="width: 18rem; border:0;">
+									<img src="img/s10.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+									  <h5><b>Puma Pacer Cage Sneakers</b></h5>
+									  <p>&star; &star; &star; &star; &star;</p>
+									  <span class="afterDis"><b>$50</b></span>
+									  <span class="beforeDis"><strike>$100</strike></span>
+									  <a href="#" class="d-block">Add To Cart</a>
+									</div>
+									<div class="icons">
+										<a href="#"><i class="bi bi-eye"></i></a>
+										<a href="#"><i class="bi bi-stack"></i></a>
+										<a href="#"><i class="bi bi-heart"></i></a>
+									  </div>
+								  </div>
+						    </div>
+							<div class="item list1">
+								<div class="card" style="width: 18rem; border:0;">
+									<img src="img/s11.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+									  <h5><b>Puma Pacer Cage Sneakers</b></h5>
+									  <p>&star; &star; &star; &star; &star;</p>
+									  <span class="afterDis"><b>$50</b></span>
+									  <span class="beforeDis"><strike>$100</strike></span>
+									  <a href="#" class="d-block">Add To Cart</a>
+									</div>
+									<div class="icons">
+										<a href="#"><i class="bi bi-eye"></i></a>
+										<a href="#"><i class="bi bi-stack"></i></a>
+										<a href="#"><i class="bi bi-heart"></i></a>
+									  </div>
+								  </div>
+						    </div>
+							<div class="item list1">
+								<div class="card" style="width: 18rem; border:0;">
+									<img src="img/s12.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+									  <h5><b>Puma Pacer Cage Sneakers</b></h5>
+									  <p>&star; &star; &star; &star; &star;</p>
+									  <span class="afterDis"><b>$50</b></span>
+									  <span class="beforeDis"><strike>$100</strike></span>
+									  <a href="#" class="d-block">Add To Cart</a>
+									</div>
+									<div class="icons">
+										<a href="#"><i class="bi bi-eye"></i></a>
+										<a href="#"><i class="bi bi-stack"></i></a>
+										<a href="#"><i class="bi bi-heart"></i></a>
+									  </div>
+								  </div>
+						    </div>
+					</div>
+				    </div>
+			</div>
+		</div>
+	</section>
+	<!-- end product section -->
+	<!-- start gallery section -->
+	<section class="gallery">
+		<div class="container padding">
+			<div class="row justify-content-center " >
+				<div class="col-xl-3 col-lg-6 order-xl-1 order-lg-1">
+					<div class="row h-100 justify-content-sm-center">
+						<div class="col-xl-12 col-sm-8">
+							<div class="item">
+								<img src="img/g1.png" alt="">
+								<a href="#" class="menBtn">men's</a>
+							</div>
+						</div>
+						<div class="col-xl-12 col-sm-8 mt-sm-4 pb-lg-4 mt-xl-2 mt-lg-4">
+							<div class="item pt-xl-4">
+								<img src="img/g2.png" alt="">
+								<a href="#" class="snBtn">sneaker</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-6 mt-xl-0 mt-sm-3 col-lg-12 order-xl-2 order-lg-3 mt-lg-3">
+					<div class="item">
+						<img src="img/g3.png" alt="">
+						<a href="#" class="wBtn">women's</a>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-6 order-lg-2 order-xl-3 ">
+					<div class="row h-100 justify-content-sm-center mt-sm-4 mt-xl-0 mt-lg-0">
+						<div class="col-xl-12 col-sm-8">
+							<div class="item">
+								<img src="img/g5.png" alt="">
+								<a href="#" class="kBtn">kids</a>
+							</div>
+						</div>
+						<div class="col-xl-12 col-sm-8 mt-xl-0 mt-sm-2">
+							<div class="item pt-xl-4">
+								<img src="img/g4.png" alt="">
+								<a href="#" class="rBtn">running</a>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end gallery section -->
+	<!-- start looping div -->
+	<div class="loop">
+		<div class="itemsTxt h-100">
+			<p>Free UK delivery - Return over $100.00 ( Excluding Homeware ) | Free UK Collect From Store</p>
+			<p> Design Week / 15% Off the website / Code: AYOSALE-2020</p>
+			<p>Orders shipping as usual. See more: COVID-19 FAQ</p>
+			<p>Always iconic. Now organic. Introducing the $20 Organic Tee. </p>
+			<p> With each receipt over $150 from AYO Store get voucher 15% off immediately.</p>
+		</div>
+	</div>
+	<!-- end looping div -->
+	<!-- start top selling section -->
+	<section class="topSelling">
+		<div class="container">
+			<div class="row lineBorder justify-content-between">
+				<div class="col-xl-3 col-lg-3 col-sm-6 d-flex justify-content-start p-0">
+					<h3>top selling products</h3>
+				</div>
+				<div class="col-xl-2 col-lg-3 col-sm-6 align-items-lg-center d-flex justify-content-end p-0">
+					<a href="#" class="viewAll">view all products <i class="fa-solid fa-angle-right"></i></a>
+				</div>
+			</div>
+			<div class="row ">
+				<div class="col-xl-12 products ">
+					<div class="insideTabs BT">
+						<div class="owl-carousel owl-theme " id="topSelling">
+							<div class="item list1">
+								<div class="card" style="width: 18rem; border:0;">
+									<img src="img/s2.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+									  <h5><b>Puma Pacer Cage Sneakers</b></h5>
+									  <p>&star; &star; &star; &star; &star;</p>
+									  <span class="afterDis"><b>$50</b></span>
+									  <span class="beforeDis"><strike>$100</strike></span>
+									  <a href="#" class="d-block">Add To Cart</a>
+									</div>
+									<div class="icons">
+										<a href="#"><i class="bi bi-eye"></i></a>
+										<a href="#"><i class="bi bi-stack"></i></a>
+										<a href="#"><i class="bi bi-heart"></i></a>
+									  </div>
+								  </div>
+						    </div>
+							<div class="item list1">
+								<div class="card" style="width: 18rem; border:0;">
+									<img src="img/s1.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+									  <h5><b>Puma Pacer Cage Sneakers</b></h5>
+									  <p>&star; &star; &star; &star; &star;</p>
+									  <span class="afterDis"><b>$50</b></span>
+									  <span class="beforeDis"><strike>$100</strike></span>
+									  <a href="#" class="d-block">Add To Cart</a>
+									</div>
+									<div class="icons">
+										<a href="#"><i class="bi bi-eye"></i></a>
+										<a href="#"><i class="bi bi-stack"></i></a>
+										<a href="#"><i class="bi bi-heart"></i></a>
+									  </div>
+								  </div>
+						    </div>
+							<div class="item list1">
+								<div class="card" style="width: 18rem; border:0;">
+									<img src="img/s3.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+									  <h5><b>Puma Pacer Cage Sneakers</b></h5>
+									  <p>&star; &star; &star; &star; &star;</p>
+									  <span class="afterDis"><b>$50</b></span>
+									  <span class="beforeDis"><strike>$100</strike></span>
+									  <a href="#" class="d-block">Add To Cart</a>
+									</div>
+									<div class="icons">
+										<a href="#"><i class="bi bi-eye"></i></a>
+										<a href="#"><i class="bi bi-stack"></i></a>
+										<a href="#"><i class="bi bi-heart"></i></a>
+									  </div>
+								  </div>
+						    </div>
+							<div class="item list1">
+								<div class="card" style="width: 18rem; border:0;">
+									<img src="img/s4.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+									  <h5><b>Puma Pacer Cage Sneakers</b></h5>
+									  <p>&star; &star; &star; &star; &star;</p>
+									  <span class="afterDis"><b>$50</b></span>
+									  <span class="beforeDis"><strike>$100</strike></span>
+									  <a href="#" class="d-block">Add To Cart</a>
+									</div>
+									<div class="icons">
+										<a href="#"><i class="bi bi-eye"></i></a>
+										<a href="#"><i class="bi bi-stack"></i></a>
+										<a href="#"><i class="bi bi-heart"></i></a>
+									  </div>
+								  </div>
+						    </div>
+							<div class="item list1">
+								<div class="card" style="width: 18rem; border:0;">
+									<img src="img/s5.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+									  <h5><b>Puma Pacer Cage Sneakers</b></h5>
+									  <p>&star; &star; &star; &star; &star;</p>
+									  <span class="afterDis"><b>$50</b></span>
+									  <span class="beforeDis"><strike>$100</strike></span>
+									  <a href="#" class="d-block">Add To Cart</a>
+									</div>
+									<div class="icons">
+										<a href="#"><i class="bi bi-eye"></i></a>
+										<a href="#"><i class="bi bi-stack"></i></a>
+										<a href="#"><i class="bi bi-heart"></i></a>
+									  </div>
+								  </div>
+						    </div>
+							<div class="item list1">
+								<div class="card" style="width: 18rem; border:0;">
+									<img src="img/s6.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+									  <h5><b>Puma Pacer Cage Sneakers</b></h5>
+									  <p>&star; &star; &star; &star; &star;</p>
+									  <span class="afterDis"><b>$50</b></span>
+									  <span class="beforeDis"><strike>$100</strike></span>
+									  <a href="#" class="d-block">Add To Cart</a>
+									</div>
+									<div class="icons">
+										<a href="#"><i class="bi bi-eye"></i></a>
+										<a href="#"><i class="bi bi-stack"></i></a>
+										<a href="#"><i class="bi bi-heart"></i></a>
+									  </div>
+								  </div>
+						    </div>
+							<div class="item list1">
+								<div class="card" style="width: 18rem; border:0;">
+									<img src="img/s7.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+									  <h5><b>Puma Pacer Cage Sneakers</b></h5>
+									  <p>&star; &star; &star; &star; &star;</p>
+									  <span class="afterDis"><b>$50</b></span>
+									  <span class="beforeDis"><strike>$100</strike></span>
+									  <a href="#" class="d-block">Add To Cart</a>
+									</div>
+									<div class="icons">
+										<a href="#"><i class="bi bi-eye"></i></a>
+										<a href="#"><i class="bi bi-stack"></i></a>
+										<a href="#"><i class="bi bi-heart"></i></a>
+									  </div>
+								  </div>
+						    </div>
+							<div class="item list1">
+								<div class="card" style="width: 18rem; border:0;">
+									<img src="img/s8.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+									  <h5><b>Puma Pacer Cage Sneakers</b></h5>
+									  <p>&star; &star; &star; &star; &star;</p>
+									  <span class="afterDis"><b>$50</b></span>
+									  <span class="beforeDis"><strike>$100</strike></span>
+									  <a href="#" class="d-block">Add To Cart</a>
+									</div>
+									<div class="icons">
+										<a href="#"><i class="bi bi-eye"></i></a>
+										<a href="#"><i class="bi bi-stack"></i></a>
+										<a href="#"><i class="bi bi-heart"></i></a>
+									  </div>
+								  </div>
+						    </div>
+							<div class="item list1">
+								<div class="card" style="width: 18rem; border:0;">
+									<img src="img/s9.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+									  <h5><b>Puma Pacer Cage Sneakers</b></h5>
+									  <p>&star; &star; &star; &star; &star;</p>
+									  <span class="afterDis"><b>$50</b></span>
+									  <span class="beforeDis"><strike>$100</strike></span>
+									  <a href="#" class="d-block">Add To Cart</a>
+									</div>
+									<div class="icons">
+										<a href="#"><i class="bi bi-eye"></i></a>
+										<a href="#"><i class="bi bi-stack"></i></a>
+										<a href="#"><i class="bi bi-heart"></i></a>
+									  </div>
+								  </div>
+						    </div>
+							<div class="item list1">
+								<div class="card" style="width: 18rem; border:0;">
+									<img src="img/s10.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+									  <h5><b>Puma Pacer Cage Sneakers</b></h5>
+									  <p>&star; &star; &star; &star; &star;</p>
+									  <span class="afterDis"><b>$50</b></span>
+									  <span class="beforeDis"><strike>$100</strike></span>
+									  <a href="#" class="d-block">Add To Cart</a>
+									</div>
+									<div class="icons">
+										<a href="#"><i class="bi bi-eye"></i></a>
+										<a href="#"><i class="bi bi-stack"></i></a>
+										<a href="#"><i class="bi bi-heart"></i></a>
+									  </div>
+								  </div>
+						    </div>
+							<div class="item list1">
+								<div class="card" style="width: 18rem; border:0;">
+									<img src="img/s11.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+									  <h5><b>Puma Pacer Cage Sneakers</b></h5>
+									  <p>&star; &star; &star; &star; &star;</p>
+									  <span class="afterDis"><b>$50</b></span>
+									  <span class="beforeDis"><strike>$100</strike></span>
+									  <a href="#" class="d-block">Add To Cart</a>
+									</div>
+									<div class="icons">
+										<a href="#"><i class="bi bi-eye"></i></a>
+										<a href="#"><i class="bi bi-stack"></i></a>
+										<a href="#"><i class="bi bi-heart"></i></a>
+									  </div>
+								  </div>
+						    </div>
+							<div class="item list1">
+								<div class="card" style="width: 18rem; border:0;">
+									<img src="img/s12.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+									  <h5><b>Puma Pacer Cage Sneakers</b></h5>
+									  <p>&star; &star; &star; &star; &star;</p>
+									  <span class="afterDis"><b>$50</b></span>
+									  <span class="beforeDis"><strike>$100</strike></span>
+									  <a href="#" class="d-block">Add To Cart</a>
+									</div>
+									<div class="icons">
+										<a href="#"><i class="bi bi-eye"></i></a>
+										<a href="#"><i class="bi bi-stack"></i></a>
+										<a href="#"><i class="bi bi-heart"></i></a>
+									  </div>
+								  </div>
+						    </div>
+					</div>
+				    </div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+	<!-- end top selling section -->
+	<!-- start banner section -->
+	<section class="banner bg-danger">
+		<div class="txtContent">
+			<h5>CYBER MONDAY SALE</h5>
+			<h1>50%</h1>
+			<h3>DUKA OUTLET 2022</h3>
+			<p>Free Shipping & 60-Day Free Returns</p>
+			<a href="#">shop now</a>
+		</div>
+	</section>
+	<!-- end banner section -->
+	<!-- start comments section -->
+	<section class="comments">
+		<div class="container">
+			<div class="row justify-content-xl-around justify-content-lg-center imgBack">
+				<div class="col-xl-5 col-lg-12 ">
+					<div class="cardComm  d-flex align-items-center">
+						<div class="firstCom d-flex justify-content-xl-around justify-content-lg-center">
+							<div class="profileImg ">
+								<img src="img/prof1.jpg" alt="">
+							</div>
+							<div class="sideTxt pl-4 d-flex flex-column justify-content-around">
+								<div class="personal pb-3">
+									<p><b>ALEXADER BALL</b> <span>Marketing Company Director</span></p>
+								</div>
+								<div class="qoute">
+									"I really liked workinh with this theme, first time I worked with a new there and there were no bugs Iclould see..."
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<div class="cardComm  d-flex align-items-center ml-5 w-100">
+						<div class="firstCom d-flex justify-content-around">
+							<div class="profileImg">
+								<img src="img/prof2.jpg" alt="">
+							</div>
+							<div class="sideTxt pl-4 d-flex flex-column justify-content-around">
+								<div class="personal pb-3">
+									<p><b>ALEXADER BALL</b> <span>Founder of AZbesttheme</span></p>
+								</div>
+								<div class="qoute">
+									"I really liked workinh with this theme, first time I worked with a new there and there were no bugs Iclould see..."
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<div class="cardComm  d-flex align-items-center">
+						<div class="firstCom d-flex justify-content-around">
+							<div class="profileImg">
+								<img src="img/prof3.jpg" alt="">
+							</div>
+							<div class="sideTxt pl-4 d-flex flex-column justify-content-around">
+								<div class="personal pb-3">
+									<p><b>ALEXADER BALL</b> <span>Coder TOPthemes360</span></p>
+								</div>
+								<div class="qoute">
+									"I really liked workinh with this theme, first time I worked with a new there and there were no bugs Iclould see..."
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="col-xl-6">
+					<div class="vision d-flex flex-column justify-content-around h-100 pr-5 mt-4">
+						<div class="likeimg"><img src="img/like.png" alt=""></div>
+						<h3>Customers Are Satisfied<br> With Our <span>Perfect & Friendly</span> Service</h3>
+						<p>Temporibus autem quibusda  m et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat</p>
+						<a href="#">DISCOVER NOW</a>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+	<!-- end comments section -->
+	<!-- start blog section -->
+	<section class="blogSec topSelling">
+		<div class="container">
+			<div class="row lineBorder justify-content-between">
+				<div class="col-xl-3 col-sm-6 d-flex justify-content-start p-0">
+					<h3>From The Blog</h3>
+				</div>
+			</div>
+			<div class="row ">
+				<div class="col-xl-12 products">
+					<div class="insideTabs BT">
+						<div class="owl-carousel owl-theme " id="blogSec">
+							<div class="item list1">
+								<div class="card" style="width: 18rem !important; border:0;margin-top: 50px;">
+									<img src="img/b1.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+									  <h5><b>Limited Edition Safari & Silver  Summicron M-Lenses</b></h5>
+									  <ul>
+										<li>
+											<span class="post">POST BY</span><span class="author"a>THAI NGUYEN</span>
+										</li>
+										<li ><span class="date">December292021</span></li>
+									  </ul>
+									  
+									  <p>"It is accompanied by a case that can contain up to three different diffusers and can be used..."</p>
+									  <a href="#" class="d-block">Read more</a>
+									</div>
+								  </div>
+						    </div>
+							<div class="item list1">
+								<div class="card" style="width: 18rem !important; border:0;margin-top: 50px;">
+									<img src="img/b2.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+									  <h5><b>Limited Edition Safari & Silver  Summicron M-Lenses</b></h5>
+									  <ul>
+										<li>
+											<span class="post">POST BY</span><span class="author"a>THAI NGUYEN</span>
+										</li>
+										<li ><span class="date">December292021</span></li>
+									  </ul>
+									  
+									  <p>"It is accompanied by a case that can contain up to three different diffusers and can be used..."</p>
+									  <a href="#" class="d-block">Read more</a>
+									</div>
+								  </div>
+						    </div>
+							<div class="item list1">
+								<div class="card" style="width: 18rem !important; border:0;margin-top: 50px;">
+									<img src="img/b3.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+									  <h5><b>Limited Edition Safari & Silver  Summicron M-Lenses</b></h5>
+									  <ul>
+										<li>
+											<span class="post">POST BY</span><span class="author"a>THAI NGUYEN</span>
+										</li>
+										<li ><span class="date">December292021</span></li>
+									  </ul>
+									  
+									  <p>"It is accompanied by a case that can contain up to three different diffusers and can be used..."</p>
+									  <a href="#" class="d-block">Read more</a>
+									</div>
+								  </div>
+						    </div>
+							<div class="item list1">
+								<div class="card" style="width: 18rem !important; border:0;margin-top: 50px;">
+									<img src="img/b4.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+									  <h5><b>Limited Edition Safari & Silver  Summicron M-Lenses</b></h5>
+									  <ul>
+										<li>
+											<span class="post">POST BY</span><span class="author"a>THAI NGUYEN</span>
+										</li>
+										<li ><span class="date">December292021</span></li>
+									  </ul>
+									  
+									  <p>"It is accompanied by a case that can contain up to three different diffusers and can be used..."</p>
+									  <a href="#" class="d-block">Read more</a>
+									</div>
+								  </div>
+						    </div>
+							<div class="item list1">
+								<div class="card" style="width: 18rem !important; border:0;margin-top: 50px;">
+									<img src="img/b5.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+									  <h5><b>Limited Edition Safari & Silver  Summicron M-Lenses</b></h5>
+									  <ul>
+										<li>
+											<span class="post">POST BY</span><span class="author"a>THAI NGUYEN</span>
+										</li>
+										<li ><span class="date">December292021</span></li>
+									  </ul>
+									  
+									  <p>"It is accompanied by a case that can contain up to three different diffusers and can be used..."</p>
+									  <a href="#" class="d-block">Read more</a>
+									</div>
+								  </div>
+						    </div>
+							<div class="item list1">
+								<div class="card" style="width: 18rem !important; border:0;margin-top: 50px;">
+									<img src="img/b6.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+									  <h5><b>Limited Edition Safari & Silver  Summicron M-Lenses</b></h5>
+									  <ul>
+										<li>
+											<span class="post">POST BY</span><span class="author"a>THAI NGUYEN</span>
+										</li>
+										<li ><span class="date">December292021</span></li>
+									  </ul>
+									  
+									  <p>"It is accompanied by a case that can contain up to three different diffusers and can be used..."</p>
+									  <a href="#" class="d-block">Read more</a>
+									</div>
+								  </div>
+						    </div>
+					</div>
+				    </div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end blog section -->
+	<!-- start signup section -->
+	<section class="signup">
+		<div class="container">
+			<div class="row justify-content-center flex-column">
+				<div class="col-xl-12 col-md-12">
+					<div class="formContent">
+						<div class="IMGCON">
+							<img src="img/signup.png" alt="">
+						</div>
+						<h3>Sign Up To Newsletter</h3>
+						<p>Subscribe to the Dukamarket store mailing list to receive updates on new arrivals,<br>
+							special offers and other discount information.</p>
+						<form action="">
+							<input type="text" class="form-control" placeholder="Your email address" required>
+							<a href="#">subscribe</a>
+						</form>
+							
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+
+	</section>
+	<!-- end sign up section -->
+	<!-- start photo section -->
+	<section class="photo">
+		<div class="container-fluid">
+			<div class="cont d-flex">
+				<div class="ph1">
+					<img src="img/bf1.jpg" alt="">
+					<i class="fa-brands fa-instagram"></i>
+				</div>
+				<div class="ph1">
+					<img src="img/bf2.jpg" alt="">
+					<i class="fa-brands fa-instagram"></i>
+				</div>
+				<div class="ph1">
+					<img src="img/bf3.jpg" alt="">
+					<i class="fa-brands fa-instagram"></i>
+				</div>
+				<div class="ph1">
+					<img src="img/bf4.jpg" alt="">
+					<i class="fa-brands fa-instagram"></i>
+				</div>
+				<div class="ph1">
+					<img src="img/bf5.jpg" alt="">
+					<i class="fa-brands fa-instagram"></i>
+				</div>
+				<div class="ph1">
+					<img src="img/bf6.jpg" alt="">
+					<i class="fa-brands fa-instagram"></i>
+				</div>
+				<div class="ph1">
+					<img src="img/bf7.jpg" alt="">
+					<i class="fa-brands fa-instagram"></i>
+				</div>
+				<div class="ph1">
+					<img src="img/bf8.jpg" alt="">
+					<i class="fa-brands fa-instagram"></i>
+				</div>
+			</div>
+
+		</div>
+
+	</section>
+	<!-- end photo section -->
+	<!-- start footer -->
+	<footer>
+		<div class="container">
+			<div class="row borderBottom">
+				<div class="col-xl-3 col-lg-3">
+					<div class="footerContent">
+						<h3>Help & Customer Care</h3>
+						<ul>
+							<li>Laptop & Computer (17)</li>
+							<li>Speaker & Audio (8)</li>
+							<li>Cellphone (11)</li>
+							<li>Video Game (18)</li>
+							<li>Accessories (12)</li>
+							<li>Delivery & Dispatch</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-xl-2 col-lg-2">
+					<div class="footerContent">
+						<h3>My Account</h3>
+						<ul>
+							<li>Search</li>
+							<li>Proudct Support</li>
+							<li>Checkout</li>
+							<li>Shopping Cart</li>
+							<li>Wishlist</li>
+							<li>New Arrivals</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-3">
+					<div class="footerContent">
+						<h3 style="color: #000; font-size:18px;">Looking For Dukamarket?</h3>
+						<div class="contactInfo">
+							<a href="#">+001 123 456 789</a>
+							<p>460 Peutestrabe, Hamburg, Germany</p>
+							<p>Example@dukamarket.com</p>
+						</div>
+					</div>
+					
+
+				</div>
+				<div class="col-xl-4 col-lg-4">
+					<div class="footerContent">
+						<h3>About Dukamarket Store</h3>
+						<p>Dukamarket is a premium template theme with advanced admin module. It's extremely easy to use and fully responsive and retina.</p>
+						<div class="imgPay" style="height:fit-content;">
+							<img src="img/pay.png" alt="">
+						</div>
+						<span>Opening Hours: Monday – Friday: 9:00-20:00 / Saturday: 11:00 – 17:00</span>
+					</div>
+
+				</div>
+			</div>
+			<div class="row pt-5 justify-content-sm-center">
+				<div class="col-xl-6 col-lg-8 col-md-12 col-sm-12 p-0">
+					<div class="copy d-flex justify-content-xl-start justify-content-md-center justify-content-sm-center">
+						<span>Copyright ©</span>
+						<a href="#">Dukamarket.</a>
+						<span>all rights reserved. Powered by</span>
+						<a href="#">alothemes</a>
+
+					</div>
+				</div>
+				<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12  p-0 mt-sm-4 mt-md-4 mt-xl-0">
+					<div class="socialIcons d-flex justify-content-xl-end justify-content-sm-center justify-content-md-center">
+						<span>Social Media:</span>
+						<ul class="iconsLogo">
+							<li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+							<li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+							<li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
+							<li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+							<li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+						</ul>
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</footer>
+	<!-- end footer -->
+	<!-- start scroller -->
+	<div class="scroller" id="scroller">
+		<i class="fa-solid fa-angles-up"></i>
+	</div>
+	<!-- end scroller -->
+	<!-- loading -->
+	<div  id="loading">
+		<div class="sk-circle">
+		<div class="sk-circle1 sk-child"></div>
+		<div class="sk-circle2 sk-child"></div>
+		<div class="sk-circle3 sk-child"></div>
+		<div class="sk-circle4 sk-child"></div>
+		<div class="sk-circle5 sk-child"></div>
+		<div class="sk-circle6 sk-child"></div>
+		<div class="sk-circle7 sk-child"></div>
+		<div class="sk-circle8 sk-child"></div>
+		<div class="sk-circle9 sk-child"></div>
+		<div class="sk-circle10 sk-child"></div>
+		<div class="sk-circle11 sk-child"></div>
+		<div class="sk-circle12 sk-child"></div>
+	  </div>
+	</div>
+	
+
+
+
+
+
+	
+
+    <!-- js -->
+	<script src="js/jquery.slim.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
